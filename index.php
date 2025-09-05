@@ -12,13 +12,9 @@
 echo "Hello World!";
 print "<p>Hi, I am $name.</p>";
 print " Today's Date :".date('Y-m-d');
+date_default_timezone_set("Asia/Kathmandu");
+print "<p> Current Time : ".date('H:i:s')."</p>";
 
-$num1 = 5;
-$num2 = 5;
-
-$sum = $num1 + $num2;
-
-echo "$sum";
 
 ?>
 </body>

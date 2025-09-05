@@ -24,6 +24,7 @@ echo "<p>Final Counter: ".$counter."</p>";
 // Assignment Operators
 
 $message = "Hello";
+
 $message .= ",World!"; //concate and assign
 
 echo "<p>".$message."</p>";
@@ -40,7 +41,8 @@ $isStudent = true;
 
 if($age > 18 && $isStudent){
     echo "<p>Eligible for student discount.</p>";
-    return;
+
+    
 }
 
 $rolledSix = false;
