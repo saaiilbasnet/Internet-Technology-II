@@ -70,7 +70,7 @@
         }
 
         .buttons input[type="submit"]:hover {
-            background: #2980b9;
+            background: #144a6fff;
         }
 
         .result {
