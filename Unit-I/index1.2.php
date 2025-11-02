@@ -9,6 +9,8 @@
 
 <?php
 
+/*  1.2 Declare two numeric variables $num1 and $num2 in PHP and display their sum, difference, product, and quotient. */
+
 $num1 = 6;
 $num2 = 9;
 

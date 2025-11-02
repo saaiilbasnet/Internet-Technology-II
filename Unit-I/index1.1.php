@@ -7,6 +7,9 @@
 </head>
 <body>
   <?php
+  /*  1.1 Write a PHP script that declares variables for your name, age, and city, and echo a sentence like: "My name is [Name], I am [Age] years old, and I 
+live in [City]." */
+
   $name = "Saaiil";
    $age = 20;
     $city = "Bhaktapur";

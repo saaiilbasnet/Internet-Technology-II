@@ -7,6 +7,9 @@
 </head>
 <body>
     <?php
+
+    /*  1.3 Create four variables of types string, integer, float, and boolean in PHP, and use var_dump() to display their type and value. */
+
     $var1 = "Saaiil";
     $var2 = 36;
     $var3 = 2.0;

@@ -8,6 +8,9 @@
 <body>
 
 <?php
+
+/*  1.4 Define two constants SITE_NAME = 'My Awesome Website' and MAX_LOGIN_ATTEMPTS = 5, then echo them. */
+
 define("SITE_NAME","My Awesome Website");
 define("MAX_LOGIN_ATTEMPTS",5);
 echo "Name of site : ".SITE_NAME . "<br>";
