@@ -11,11 +11,13 @@
 
 /* 1.10 Create variables $firstName, $middleName, and $lastName, concatenate them into $fullName, and echo a greeting like "Hello, [fullName]!". */
 
-$firstName = "Saaiil";
-$middleName = "Bhadur";
+$firstName = "Saaiil ";
+$middleName = "Bhadur ";
 $lastName = "Basnet";
 
-echo "Hello, $firstName"." $middleName"." $lastName!";
+$fullName = $firstName.$middleName.$lastName;
+
+echo "Hello, $fullName !";
 
 ?>
     
