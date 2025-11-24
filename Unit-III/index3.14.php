@@ -15,7 +15,7 @@ $discount = 10;
 
 function calculateVAT($amount, $rate){
     // Calculate VAT properly
-    $total = $amount + ($amount * $rate);
+    $total = $amount + ($rate/100)*$amount;
 
     echo "Amount including VAT: $total<br>";
 

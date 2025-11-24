@@ -12,7 +12,7 @@
 
 function calculateVAT($amount, $rate){
 
-    return $amount + ($amount * $rate);
+    return $amount + ($rate/100)*$amount;
 
 }
 
