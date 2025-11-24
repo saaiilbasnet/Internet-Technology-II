@@ -14,6 +14,8 @@ $myString = "PHP Code";
 
 $upperString = strtoupper($myString);
 
+echo "The length of $myString is ".strlen($myString).".<br>";
+
 echo "'$myString' converted to '$upperString'.";
 
 

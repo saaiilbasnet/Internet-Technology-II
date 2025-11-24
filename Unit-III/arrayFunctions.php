@@ -23,8 +23,6 @@ rsort($names);
 echo "Sorted names (descending) : ".implode(", ",$names)."<br";
 
 
-
-
 ?>
     
 </body>
