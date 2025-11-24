@@ -10,11 +10,12 @@
 
 <?php
 
-$product = ["Laptop","Mobile Phone","Tablets","Ipads","Iphones","MacBook"];
+$product = ['Name'=>'Laptop','Price'=>'1200'];
 
-foreach($product as $x){
-    echo "$x<br>";
+foreach($product as $key => $value){
+    echo "$key : $value"."<br>";
 }
+
 
 ?>
     

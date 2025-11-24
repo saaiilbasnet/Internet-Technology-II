@@ -11,6 +11,8 @@
 <?php
 
 $date = new DateTime();
+$date->modify('+3 days');
+echo $date->format('Y-m-d'); 
 
 ?>
     

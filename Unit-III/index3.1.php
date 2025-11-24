@@ -12,9 +12,7 @@
 
 $product = ['Name'=>'Laptop','Price'=>'1200'];
 
-foreach($product as $key => $value){
-    echo "$key : $value"."<br>";
-}
+echo "The price for $product[Name] is $product[Price].";
 
 ?>
     
