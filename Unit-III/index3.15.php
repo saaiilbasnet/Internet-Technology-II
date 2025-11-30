@@ -13,7 +13,6 @@
 function generateButton($text) {
     echo "<button>$text</button>";
 }
-
 // Example call
 generateButton("Click Me");
 
