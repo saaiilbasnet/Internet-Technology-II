@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dob    = htmlspecialchars($_POST["dob"]);
 
     echo "<div class='result'>
-            <h2>Form Submitted Successfully ✔️</h2>
+            <h2>Form Submitted Successfully.</h2>
             <p><strong>Name:</strong> $name</p>
             <p><strong>Email:</strong> $email</p>
             <p><strong>Gender:</strong> $gender</p>
