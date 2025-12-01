@@ -52,10 +52,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $gender = $_POST["gender"];
     }
 
-        if(empty($_POST["dob"])){
+        if(empty($_POST["date"])){
         $errors[] = "DOB field is empty!";
     }else{
-        $dob = $_POST["dob"];
+        $dob = $_POST["date"];
     }
 
 if(empty($errors)){
@@ -76,17 +76,17 @@ else{
 
 <fieldset>
     <legend>Registration Form</legend>
-<form action="#" method="POST">
+<form action="#" method="POST" id="myForm">
 
 <label for="name">Name : </label>
-<input type="text" id="name" name="name" required>
+<input type="text" id="name" name="name">
 <br> <br>
 <label for="email">Email : </label>
-<input type="email" id="email" name="email" required>
+<input type="email" id="email" name="email">
 <br><br>
 
 <label>Gender:</label>
-        <select name="gender" required>
+        <select name="gender">
             <option value="" disabled selected>-- Select Gender --</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -94,7 +94,7 @@ else{
         </select>
 <br><br>
         <label for="date">Date : </label>
-    <input type="date" id="date" name="date" required>
+    <input type="date" id="date" name="date">
 
     <br><br>
     <button type="submit">submit</button>
@@ -103,6 +103,48 @@ else{
     </fieldset>
 </body>
 <script>
+
+    document.getElementById("myForm").addEventListener("submit",(event)=>{
+        let name = document.getElementById("name").value.trim();
+         let email = document.getElementById("email").value.trim();
+        let gender = document.getElementById("gender").value;
+        let date = document.getElementById("date").value;
+
+        let errors = [];
+            //name validation
+        if(name == ""){
+           return errors.push("Name field empty!");
+        }
+
+        if(name.length < 3){
+          return errors.push("Name should be longer or equals to 3 characters!");
+        }
+        //email validation
+
+        if(email==""){
+           return errors.push("Email field is invalid");
+        }
+        
+        // gender validation
+
+        if(gender==""){
+           return errors.push("Gnder field is empty!");
+        }
+
+        //date validation
+
+        if(date==""){
+            return errors.push("Date field is empty!");
+        }
+
+        //errors displays
+
+        if(errors.length>0){
+            event.preventDefault();
+            alert(errors.join("\n"));
+        }
+
+    })
 
 </script>
 </html>
