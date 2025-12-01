@@ -84,7 +84,9 @@
 </head>
 <body>
 <?php
+
 // Handle form submission
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name   = htmlspecialchars($_POST["name"]);
     $email  = htmlspecialchars($_POST["email"]);
@@ -100,6 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </div>";
 }
 ?>
+
 <div class="form-container">
     <h2>Registration Form</h2>
 
