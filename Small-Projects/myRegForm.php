@@ -28,15 +28,47 @@
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $gender = $_POST["gender"];
-    $dob = $_POST["date"];
+    $errors = [];
 
-    echo "Name : $name<br>";
+    // $email = $_POST["email"];
+    // $gender = $_POST["gender"];
+    // $dob = $_POST["date"];
+
+    if(empty($_POST["name"])){
+        $errors[] = "Name field is empty!";
+    }else{
+        $name = $_POST["name"];
+    }
+
+        if(empty($_POST["email"])){
+        $errors[] = "Email field is empty!";
+    }else{
+        $email = $_POST["email"];
+    }
+
+        if(empty($_POST["gender"])){
+        $errors[] = "Gender field is empty!";
+    }else{
+        $gender = $_POST["gender"];
+    }
+
+        if(empty($_POST["dob"])){
+        $errors[] = "DOB field is empty!";
+    }else{
+        $dob = $_POST["dob"];
+    }
+
+if(empty($errors)){
+        echo "Name : $name<br>";
         echo "Email : $email<br>";
             echo "Gender : $gender<br>";
                 echo "Date of Birth : $dob<br>";
+}
+else{
+    foreach($errors as $e){
+        echo "$e<br>";
+    }
+}
 
 }
 
@@ -70,4 +102,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 </form>
     </fieldset>
 </body>
+<script>
+
+</script>
 </html>
