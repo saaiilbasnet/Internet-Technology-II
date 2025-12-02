@@ -9,21 +9,20 @@
 
 <?php
 
-$errors = [];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-if(isset($_POST["user_name"])){
-    $errors[] = "Name field is invalid!";
-}else{
-    $name = $_POST["user_name"];
-}
-
-if(empty($errors)){
-    echo "Name : $name<br>";
-}else{
-    foreach($errors as $e){
-        echo "$e<br>";
+    if (!empty($_POST["user_name"])) {
+        $name = htmlspecialchars($_POST["user_name"]);
+        echo "Name: $name";
+    } else {
+        echo "Name field empty!";
     }
+
+} else {
+    echo "Form not submitted!";
 }
+
+
 
 ?>
     

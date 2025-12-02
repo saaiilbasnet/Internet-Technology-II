@@ -9,12 +9,10 @@
 
 <form action="handle_form.php" method="POST">
 
-<label for="#">
-    Name : 
-    <input type="text" name="user_name" id="#">
-</label>
+<label for="username">Name :</label>
+<input type="text" name="user_name" id="username">
 
-<input type="submit" value="send" id="#">
+<input type="submit" value="Send">
 
 </form>
     
