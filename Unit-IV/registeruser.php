@@ -58,12 +58,6 @@
         echo "Passowrd field empty! <br>";
     }
 
-    // if(erros.length > 0){
-    //     foreach($errors as $e){
-    //         echo "$e<br>";
-    //     }
-    // }
-
    }
 
    ?>
