@@ -6,7 +6,8 @@
     <title>Register Form</title>
 </head>
 <body>
-
+<fieldset>
+    <legend>Enter your details.</legend>
 <form action="#" method="POST">
 
 <label for="email">Email : </label>
@@ -24,7 +25,7 @@
 <input type="submit" value="Register">
 
 </form>
-
+</fieldset>
 <?php
 
 if($_SERVER["REQUEST_METHOD"]==="POST"){
@@ -52,7 +53,7 @@ if(!empty($_POST["password"])){
 
 }else{
 
-    echo "Password field empty!";
+    echo "Password field empty!<br>";
 
 }
 
