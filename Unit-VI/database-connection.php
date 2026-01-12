@@ -13,16 +13,16 @@ $dbname = "php_test";
 $username = "root";
 $password = "";
 
-$dsn = "mysql:host = $host; dbname = $dbname; charset=UTF8";
+// $dsn = "mysql:host=$host; dbname=$dbname; charset=UTF8";
 
 try{
 
-    $pdo = new PDO($dsn, $username, $password);
+    $pdo = new PDO("mysql:host=$host; dbname=$dbname; charset=UTF8", $username, $password);
     $pdo->setAttribute(PDO:: ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Database connected successfully!";
+    echo "Database connected successfully!<br>";
 
 }catch(PDOException $e){
-echo "Database connection failed: ".$e->getMessage();
+echo "Database connection failed: ".$e->getMessage()."<br>";
 }
 
 ?>
