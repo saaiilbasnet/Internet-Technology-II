@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-<form action="login.php" method="POST">
-    Email: <input type="email" name="email" id="email"> <br>
+<form action="login-sqlinj-prevention.php" method="POST">
+    Username: <input type="username" name="username" id="username"> <br>
     Password : <input type="password" name="password" id="password"><br>
     <input type="submit" name="submit" id="btn" value="login">
 </form>

@@ -1,9 +1,9 @@
     <?php
 require 'database-connection.php';
-$email = $_POST['email'];
+$username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "SELECT * FROM users WHERE email = '$email' AND passwords = '$password'";
+$sql = "SELECT * FROM users WHERE name = '$username' AND passwords = '$password'";
 $result = $pdo->query($sql);
 
 if($result->rowCount()>0){
