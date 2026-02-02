@@ -1,18 +1,21 @@
 <?php
-class User {
-    private $name; 
+class User
+{
+    private $name;
 
-    public function setName($name) {
+    public function setName($name)
+    {
         $this->name = $name;
     }
 
-    public function getName() {
+    public function getName()
+    {
         return $this->name;
     }
 }
 
 $user = new User();
-$user->setName("Ram");
+$user->setName('Ram');
 echo $user->getName();
 
 ?>
